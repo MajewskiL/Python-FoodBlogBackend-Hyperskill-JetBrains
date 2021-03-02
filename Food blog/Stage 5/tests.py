@@ -6,7 +6,7 @@ import os
 class SQLite3Test:
 
     """It's recommended to keep the sequence:
-    1. Create object SQLite3Check
+    1. Create object SQLite3Check.
     2. Check is file exists
     3. Establish connection
     4. Check is table exists

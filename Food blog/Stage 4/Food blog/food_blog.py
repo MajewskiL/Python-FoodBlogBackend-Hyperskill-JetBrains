@@ -4,7 +4,6 @@ import sys
 data = {"meals": ("breakfast", "brunch", "lunch", "supper"),
         "ingredients": ("milk", "cacao", "strawberry", "blueberry", "blackberry", "sugar"),
         "measures": ("ml", "g", "l", "cup", "tbsp", "tsp", "dsp", "")}
-
 wsad = ("Milkshake\nBlend all ingredients and put in the fridge.\n1 3 4\n500 ml milk\n1 cup strawberry\n1 tbsp sugar\n", \
         "\n",
         "Hot cacao\nPour the ingredients into the hot milk. Mix it up.\n1 4\n250 ml milk\n2 tbsp cacao\n1 tsp sugar\n",

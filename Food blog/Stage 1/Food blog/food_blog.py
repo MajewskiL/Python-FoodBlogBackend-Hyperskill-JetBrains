@@ -22,7 +22,5 @@ def create_tables(database):
     conn.commit()
     conn.close()
 
-#input()
 create_tables(sys.argv[1])
 
-# remember that second add of the same name could raise error

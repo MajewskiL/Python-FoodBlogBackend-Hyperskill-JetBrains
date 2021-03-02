@@ -114,6 +114,3 @@ if not args.ingredients:
 else:
     print_query(args.File, args.ingredients, args.meals)
 
-
-# --ingredients="sugar milk strawberry" --meals="lunch"
-# --ingredients="sugar milk" --meals="supper"
