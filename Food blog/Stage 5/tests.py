@@ -124,16 +124,16 @@ class FoodBlogStage1(StageTest):
 
             if arguments[1] == "--ingredients=milk,sugar":
                 if any(["Milkshake" not in output, "Hot cacao" not in output, "salad" in output]):
-                    return CheckResult.wrong(f"Wrong answer. Founded '{output}', expected Milkshake and Hot cacao.")
+                    return CheckResult.wrong(f"Wrong answer. Found '{output}', expected Milkshake and Hot cacao.")
             elif arguments[1] == "--ingredients=strawberry,sugar":
                 if any(["Milkshake" not in output, "Fruit salad" not in output, "cacao" in output]):
-                    return CheckResult.wrong(f"Wrong answer. Founded '{output}', expected Milkshake and Fruit salad.")
+                    return CheckResult.wrong(f"Wrong answer. Found '{output}', expected Milkshake and Fruit salad.")
             elif arguments[1] == "--ingredients=cacao":
                 if any([output.count("Hot cacao") != 2 , "Milkshake" in output]):
-                    return CheckResult.wrong(f"Wrong answer. Founded '{output}', expected Hot cacao and Hot cacao.")
+                    return CheckResult.wrong(f"Wrong answer. Found '{output}', expected Hot cacao and Hot cacao.")
             else:
                 if "no such recipes" not in output:
-                    return CheckResult.wrong(f"Wrong answer. Founded '{output}', expected 'no such recipes'.")
+                    return CheckResult.wrong(f"Wrong answer. Found '{output}', expected 'no such recipes'.")
                 if not dbase.is_file_exist():
                     os.remove(arguments[0])
 
